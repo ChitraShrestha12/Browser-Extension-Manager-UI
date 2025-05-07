@@ -1,38 +1,31 @@
 ﻿# Browser-Extension-Manager-UI
-A responsive, animated browser extension manager UI built using HTML, CSS, and Vanilla JavaScript. This project allows users to view, filter, and manage browser extensions in a clean, modern interface with dark/light theme support.
-🚀 Live Demo
-Click here to view the live site
 
+A responsive, animated browser extension manager UI built using **HTML**, **CSS**, and **Vanilla JavaScript**. This project allows users to view, filter, and manage browser extensions in a clean, modern interface with dark/light theme support.
+
+
+## 🚀 Live Demo
+
+[View Live Site](https://your-live-site-url.com)  
 <!-- Replace with your actual deployment link -->
-🔧 Features
 
-🔎 Filter extensions: All / Active / Inactive
+## 🔧 Features
 
-🎨 Toggle between Dark and Light modes
+- 🔎 Filter extensions: **All / Active / Inactive**
+- 🎨 Toggle between **Dark and Light modes**
+- ❌ Remove extensions from the list
+- ✨ Smooth UI animations with **Animate.css**
+- 📱 Responsive design for all screen sizes
 
-❌ Remove extensions from the list
+## 🛠️ Tools & Technologies
 
-✨ Smooth UI animations with Animate.css
-
-📱 Responsive design for all screen sizes
-
-
-
-
-🛠️ Tools & Technologies
-
-HTML5
-
-CSS3 (with media queries and CSS variables)
-
-JavaScript (ES6+)
-
-Animate.css – for smooth animations
+- HTML5
+- CSS3 (with media queries and CSS variables)
+- JavaScript (ES6+)
+- [Animate.css](https://animate.style/)
 
 
 
-
-✅ What I Learned
+##✅ What I Learned
 
 Handling dark/light mode toggle with localStorage
 
