@@ -27,10 +27,10 @@ A responsive, animated browser extension manager UI built using **HTML**, **CSS*
 
 ## ✅ What I Learned
 
--Handling dark/light mode toggle with localStorage
+- Handling dark/light mode toggle with localStorage
 
--DOM manipulation and event handling in vanilla JavaScript
+- DOM manipulation and event handling in vanilla JavaScript
 
--Designing responsive layouts using Flexbox and media queries
+- Designing responsive layouts using Flexbox and media queries
 
--Applying animations effectively to enhance user experience
+- Applying animations effectively to enhance user experience
