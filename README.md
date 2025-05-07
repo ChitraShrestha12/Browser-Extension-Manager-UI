@@ -5,7 +5,7 @@ A responsive, animated browser extension manager UI built using **HTML**, **CSS*
 
 ## 🚀 Live Demo
 
-[View Live Site](https://your-live-site-url.com)  
+[View Live Site]([https://your-live-site-url.com](https://browser-extenstion-manager.netlify.app/))  
 <!-- Replace with your actual deployment link -->
 
 ## 🔧 Features
