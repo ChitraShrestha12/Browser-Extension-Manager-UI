@@ -25,7 +25,7 @@ A responsive, animated browser extension manager UI built using **HTML**, **CSS*
 
 
 
-##✅ What I Learned
+## ✅ What I Learned
 
 Handling dark/light mode toggle with localStorage
 
