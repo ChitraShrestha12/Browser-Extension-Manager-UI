@@ -17,6 +17,8 @@ Click here to view the live site
 📱 Responsive design for all screen sizes
 
 
+
+
 🛠️ Tools & Technologies
 
 HTML5
@@ -26,6 +28,8 @@ CSS3 (with media queries and CSS variables)
 JavaScript (ES6+)
 
 Animate.css – for smooth animations
+
+
 
 
 ✅ What I Learned
