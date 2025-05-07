@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body.dark {
+  --background: linear-gradient(180deg, #040918 0%, #091540 100%);
+  --element-color: #1e2337;
+  --dark-element: hsl(225, 23%, 24%);
+  --text-color: white;
+  background: var(--background);
+  color: var(--text-color);
+}
+
+body.dark .dark-light {
+  background-color: var(--dark-element);
+}
+
+body {
+  padding: 25px 80px;
+  background: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--element-color);
+}
+
+.logo {
+  max-width: 140px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.dark-light {
+  max-width: 32px;
+  background-color: hsl(217, 61%, 90%);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.dark-light img {
+  width: 100%;
+}
+
+.dark-light,
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+main {
+  margin-top: 35px;
+}
+
+.filter-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    margin-left: 8px;
+}
+
+button:hover {
+  background-color: hsl(4, 25%, 87%);
+}
+
+button:focus {
+  border: 2px solid hsl(3, 71%, 56%);
+  outline-width: 2px;
+  outline-color: hsl(3, 71%, 56%);
+  margin: 1px;
+}
+
+.filter button:first-child {
+  background-color: hsl(3, 71%, 56%);
+  color: white;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 310px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: var(--element-color);
+}
+
+.card .img-detail {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.img-detail article {
+  max-width: 50px;
+}
+
+.img-detail img {
+  width: 100%;
+}
+
+.details h4 {
+  margin-block: 2px;
+}
+
+.details p {
+  width: 90%;
+  font-size: 13px;
+  color: hsl(226, 11%, 37%);
+}
+
+.remove-toggle {
+  margin-top: 30px;
+}
+
+.remove-toggle button{
+  margin: 0;
+}
+
+.cards-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-block: 20px;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 40px;  /* Compact 40px width */
+  height: 24px;  /* Proportionally shorter height */
+}
+
+.toggle-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 24px;  /* Matches height */
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;  /* Smaller circle */
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.toggle-input:checked + .toggle-slider {
+  background-color: #2196F3;
+}
+
+.toggle-input:checked + .toggle-slider:before {
+  transform: translateX(16px);  /* Adjusted slide distance */
+}
+
+.toggle-input:focus + .toggle-slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.remove-toggle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 815px) {
+  body {
+    padding: 20px 30px;
+  }
+
+  .logo {
+    max-width: 140px;
+  }
+
+  .dark-light {
+    max-width: 30px;
+  }
+
+  .cards-list{
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  body {
+    padding: 10px;
+  }
+
+  .logo {
+    max-width: 120px;
+  }
+
+
+  .filter-title {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .filter-title h1{
+    margin-bottom: 8px;
+  }
+
+  .cards-list{
+    justify-content: center;
+  }
+}
